@@ -10,14 +10,12 @@ import java.security.NoSuchAlgorithmException;
 public class PasswordServiceImpl implements PasswordService {
     @Override
     public String generatePassword(String password) {
-
-        String passwordToHash = "password";
         String generatedPassword = null;
         try {
             // Create MessageDigest instance for MD5
             MessageDigest md = MessageDigest.getInstance("MD5");
             //Add password bytes to digest
-            md.update(passwordToHash.getBytes());
+            md.update(password.getBytes());
             //Get the hash's bytes
             byte[] bytes = md.digest();
             //This bytes[] has bytes in decimal format;

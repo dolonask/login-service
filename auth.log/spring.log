@@ -1,0 +1,39 @@
+2020-07-10 02:06:10.615  INFO 9132 --- [restartedMain] k.e.l.LoginServiceApplication            : Starting LoginServiceApplication on NB-DOLON with PID 9132 (C:\Users\Dolon\delivery-service\login-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\login-service)
+2020-07-10 02:06:10.619 DEBUG 9132 --- [restartedMain] k.e.l.LoginServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-10 02:06:10.620  INFO 9132 --- [restartedMain] k.e.l.LoginServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-10 02:06:10.679  INFO 9132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-10 02:06:10.679  INFO 9132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-10 02:06:11.988  INFO 9132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-10 02:06:12.069  INFO 9132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 2 JPA repository interfaces.
+2020-07-10 02:06:12.708  INFO 9132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-07-10 02:06:12.717  INFO 9132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-10 02:06:12.717  INFO 9132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-10 02:06:12.838  INFO 9132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-10 02:06:12.839  INFO 9132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2159 ms
+2020-07-10 02:06:13.136  INFO 9132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-10 02:06:13.535  WARN 9132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-10 02:06:13.558  INFO 9132 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-10 02:06:13.697  INFO 9132 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-10 02:06:13.768  INFO 9132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-10 02:06:13.839  INFO 9132 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-10 02:06:13.986  INFO 9132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-10 02:06:14.515  INFO 9132 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-10 02:06:14.636  INFO 9132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2020-07-10 02:06:14.638  INFO 9132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-10 02:06:14.656  INFO 9132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-10 02:06:14.687  INFO 9132 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-10 02:06:14.820  INFO 9132 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-10 02:06:14.821  INFO 9132 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-10 02:06:14.867  INFO 9132 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-10 02:06:15.387  INFO 9132 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-10 02:06:15.400  INFO 9132 --- [restartedMain] k.e.l.LoginServiceApplication            : Started LoginServiceApplication in 5.235 seconds (JVM running for 6.133)
+2020-07-10 02:06:15.806  INFO 9132 --- [RMI TCP Connection(2)-10.230.171.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-10 02:06:15.807  INFO 9132 --- [RMI TCP Connection(2)-10.230.171.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-10 02:06:15.814  INFO 9132 --- [RMI TCP Connection(2)-10.230.171.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-10 02:06:19.009 DEBUG 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Enter: kg.easy.loginservice.controllers.SessionController.auth() with argument[s] = [saasd, Admin135sad]
+2020-07-10 02:06:19.016 DEBUG 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Enter: kg.easy.loginservice.services.impl.SessionServiceImpl.logIn() with argument[s] = [saasd, Admin135sad]
+2020-07-10 02:06:19.020 DEBUG 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Enter: kg.easy.loginservice.services.impl.UserServiceImpl.findUserByLogin() with argument[s] = [saasd]
+2020-07-10 02:06:19.057 ERROR 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Exception in kg.easy.loginservice.services.impl.UserServiceImpl.findUserByLogin() with cause = NULL
+2020-07-10 02:06:19.058 ERROR 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Exception in kg.easy.loginservice.services.impl.SessionServiceImpl.logIn() with cause = NULL
+2020-07-10 02:06:19.058 ERROR 9132 --- [http-nio-8001-exec-1] k.e.loginservice.aspect.LoggingAspect    : Exception in kg.easy.loginservice.controllers.SessionController.auth() with cause = NULL
+2020-07-10 02:06:19.091  WARN 9132 --- [http-nio-8001-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [kg.easy.loginservice.exceptions.ResourceNotFoundException: Учетная запись не найдена!]

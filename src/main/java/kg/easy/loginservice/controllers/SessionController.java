@@ -2,6 +2,8 @@ package kg.easy.loginservice.controllers;
 
 import kg.easy.loginservice.models.dto.SessionDto;
 import kg.easy.loginservice.models.entities.Session;
+import kg.easy.loginservice.services.SessionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -9,18 +11,21 @@ import org.springframework.web.bind.annotation.*;
 public class SessionController {
 
 
+    @Autowired
+    private SessionService sessionService;
+
     @GetMapping("/auth")
     public SessionDto auth(@RequestParam String login, @RequestParam String password){
-        return null;
+        return sessionService.logIn(login, password);
     }
 
     @GetMapping("/out")
     public boolean logOut(@RequestHeader("auth") String auth){
-        return false;
+        return sessionService.closeSession(auth);
     }
 
     public boolean checkSession(@RequestHeader("auth") String auth){
-        return true;
+        return sessionService.findSessionByToken(auth) != null;
     }
 
 
